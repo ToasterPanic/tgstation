@@ -164,6 +164,21 @@
 
 	bodypart_overlay = /datum/bodypart_overlay/mutant/cat_ears
 
+/obj/item/organ/ears/protogen
+	name = "cat ears"
+	icon = 'icons/obj/clothing/head/costume.dmi'
+	worn_icon = 'icons/mob/clothing/head/costume.dmi'
+	icon_state = "kitty"
+	visual = TRUE
+	damage_multiplier = 0.25
+
+	preference = "feature_human_ears"
+	restyle_flags = EXTERNAL_RESTYLE_FLESH
+
+	dna_block = DNA_EARS_BLOCK
+
+	bodypart_overlay = /datum/bodypart_overlay/mutant/cat_ears
+
 /// Bodypart overlay for the horrible cat ears
 /datum/bodypart_overlay/mutant/cat_ears
 	layers = EXTERNAL_FRONT | EXTERNAL_BEHIND

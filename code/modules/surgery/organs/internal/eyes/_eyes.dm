@@ -1031,6 +1031,12 @@
 	icon_state = "lizard_eyes"
 	synchronized_blinking = FALSE
 
+/obj/item/organ/eyes/protogen
+	name = "protogen visor screen"
+	desc = "This is extremely concerning."
+	icon_state = "lizard_eyes"
+	blink_animation = FALSE
+
 /obj/item/organ/eyes/night_vision/maintenance_adapted
 	name = "adapted eyes"
 	desc = "These red eyes look like two foggy marbles. They give off a particularly worrying glow in the dark."

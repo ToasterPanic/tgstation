@@ -203,6 +203,14 @@
 		new /regex(@"\bX([\-|r|R]|\b)", "g") = "ECKS$1",
 	)
 
+/obj/item/organ/tongue/protogen
+	name = "protogen tongue"
+	desc = "How this works is far beyond your understanding.."
+	say_mod = "beeps"
+	languages_native = list(/datum/language/common, /datum/language/hexadecimal)
+	liked_foodtypes = MEAT | SEAFOOD | NUTS | BUGS | GRAIN | DAIRY
+	disliked_foodtypes = CLOTH | GROSS | GORE
+
 /obj/item/organ/tongue/lizard/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/speechmod, replacements = speech_replacements, should_modify_speech = CALLBACK(src, PROC_REF(should_modify_speech)))
